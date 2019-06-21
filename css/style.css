@@ -555,10 +555,6 @@ body  {
     filter: grayscale(100%);
 }
 
-.news-card:hover {
-    transform: scale(1.05);
-}
-
 .news-card:hover .news-card__img {
     filter: grayscale(0%);
 }
@@ -999,16 +995,13 @@ body  {
         flex-direction: column;
     }
 
-    .fields-wrapper__contact-input {
+    .fields-wrapper__contact-input, .submit__info {
         padding-bottom: 10px;
     }
     .contact-fields__submit {
         display: block;
         text-align: center;
         padding-top: 0;
-    }
-    .submit__info {
-        padding-bottom: 10px;
     }
 
     .title--slider {
@@ -1061,8 +1054,8 @@ body  {
 
     .talk-item__img {
         position: static;
-        width: 50%;
-        height: 50%;
+        width: 60%;
+        height: 60%;
     }
 
     .portfolio__tabs {
@@ -1107,4 +1100,109 @@ body  {
     .subscribe, .footer {
         padding: 30px 0;
     }
+
+    .talk-item {
+        text-align: center;; 
+    }
+
+    .talk-item .btn {
+        margin-bottom: 20px;
+    }
+
+    .talk-item__text {
+        padding-bottom: 20px;
+    }
+
+    .lets-talk {
+        padding-top: 10px;
+    }
+
+    .latest-news__news-card {
+        padding: 40px 0 10px;
+        border-bottom: 1px solid #777;
 }    
+
+@media (max-width: 575px) {
+
+    .inner__title {
+        letter-spacing: 15px;
+    }
+
+    .inner__subtitle {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    
+    .tabs__cards {
+        width: 100%;
+    }
+
+    .email-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-form__text-field {
+        margin-bottom: 15px;
+    }
+    
+    .title--slider {
+        padding-top: 80px;
+    }
+
+    .slider__item-text {
+        font-size: 15px;
+        padding-top: 25px;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .title, .services__title, .subcribe__title {
+        font-size: 15px;
+    }
+
+    .card-text--alt {
+        font-size: 15px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .inner__title {
+        font-size: 26px;
+        letter-spacing: 10px;
+    }
+
+    .inner__subtitle {
+        font-size: 10px;
+    }
+
+    .item__name {
+        font-size: 12px;
+        letter-spacing: 3px;
+        padding-top: 20px;
+    }
+
+    .item__icon {
+        font-size: 36px;
+        font-weight: 300;
+    }
+
+    .tab-menu__item {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .contact-input__name, .contact-input__email, .contact-input__message {
+        width: 260px;
+    }
+
+}
+
